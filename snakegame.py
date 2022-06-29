@@ -1,4 +1,5 @@
 import random
+import sys
 import pygame
 
 pygame.init()
@@ -42,7 +43,7 @@ def welcome():
                 if event.key == pygame.K_3:
                     gameloophard()
                 if event.key == pygame.K_4:
-                    quit()
+                    sys.exit()
                 if event.key == pygame.K_5:
                     img1 = pygame.image.load("instruction.jpg")
                     img1 = pygame.transform.scale(img1, (600, 600)).convert_alpha()
@@ -133,7 +134,7 @@ def gameloopeasy():
         pygame.display.update()
         time.tick(60)
     pygame.quit()
-    exit()
+    sys.exit()
 
 
 def gameloopmedium():
@@ -215,7 +216,7 @@ def gameloopmedium():
         pygame.display.update()
         time.tick(60)
     pygame.quit()
-    exit()
+    sys.exit()
 
 
 def gameloophard():
@@ -298,7 +299,7 @@ def gameloophard():
         pygame.display.update()
         time.tick(60)
     pygame.quit()
-    exit()
+    sys.exit()
 
 
 if __name__ == "__main__":
