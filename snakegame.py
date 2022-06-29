@@ -133,7 +133,7 @@ def gameloopeasy():
         pygame.display.update()
         time.tick(60)
     pygame.quit()
-    quit()
+    exit()
 
 
 def gameloopmedium():
@@ -215,7 +215,7 @@ def gameloopmedium():
         pygame.display.update()
         time.tick(60)
     pygame.quit()
-    quit()
+    exit()
 
 
 def gameloophard():
@@ -298,7 +298,7 @@ def gameloophard():
         pygame.display.update()
         time.tick(60)
     pygame.quit()
-    quit()
+    exit()
 
 
 if __name__ == "__main__":
